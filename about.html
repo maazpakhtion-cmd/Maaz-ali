@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="scroll-progress" id="scrollBar"></div>
+
+    <nav>
+        <div class="nav-logo">{ DA_Portfolio }</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="closeMenu()">Home</a>
+        <a href="about.html" onclick="closeMenu()">About</a>
+        <a href="skills.html" onclick="closeMenu()">Skills</a>
+        <a href="projects.html" onclick="closeMenu()">Projects</a>
+        <a href="certificates.html" onclick="closeMenu()">Certificates</a>
+        <a href="contact.html" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <div class="section-inner" style="padding-top:7rem;">
+        <div class="section-tag">who I am</div>
+        <h1 class="section-title">About <span>Me</span></h1>
+        <div class="divider"></div>
+
+        <div class="about-grid">
+
+            <!-- CARD -->
+            <div>
+                <div class="about-card reveal">
+                    <div class="about-avatar"> <img src="Maaz.jpeg" alt="Maaz Ali" /></div>
+                    <div class="about-name">Maaz Ali</div>
+                    <div class="about-role">Data Analyst & BI Developer</div>
+                    <div class="about-links">
+                        <a href="maazpakhtion@gmail.com" class="about-link" title="Email">✉</a>
+                        <a href="https://linkedin.com/in/maaz-ali-b5aa18384" class="about-link" title="LinkedIn" target="_blank">in</a>
+                        <a href="https://github.com/maazpakhtion-cmd" class="about-link" title="GitHub" target="_blank">G</a>
+                    </div>
+                </div>
+
+                <!-- QUICK INFO -->
+                <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:.8rem;">
+                    <div class="edu-item reveal">
+                        <div class="edu-school">📍 Location</div>
+                        <div class="edu-degree">Pakistan 🇵🇰</div>
+                    </div>
+                    <div class="edu-item reveal">
+                        <div class="edu-school">🌐 Languages</div>
+                        <div class="edu-degree">Urdu · English</div>
+                    </div>
+                    <div class="edu-item reveal">
+                        <div class="edu-school">💼 Status</div>
+                        <div class="edu-degree" style="color:var(--accent2)">Open to Work ✅</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INFO -->
+            <div class="about-info">
+                <p class="about-bio reveal">
+                    I'm a passionate Data Analyst with expertise in transforming complex datasets into clear, actionable insights. I specialize in building interactive Power BI dashboards, automating workflows in Excel and Python, and writing efficient SQL queries.
+                </p>
+                <p class="about-bio reveal">
+                    My goal is to help businesses make smarter, data-driven decisions through clean visualizations and meaningful analysis. I love working with messy data and bringing order — and clarity — out of chaos.
+                </p>
+                <p class="about-bio reveal">
+                    When I'm not analysing data, I'm exploring new tools, contributing to open-source dashboards on GitHub, and mentoring beginners in the data community.
+                </p>
+
+                <h3 style="margin-bottom:1rem;font-size:1rem;font-weight:700;" class="reveal">🎓 Education</h3>
+                <div class="edu-item reveal">
+                    <div class="edu-degree">Intermediate </div>
+                    <div class="edu-school">Faran Deucation system</div>
+                    <div class="edu-year">2024 – 2026</div>
+                </div>
+                <div class="edu-item reveal">
+                    <div class="edu-degree">Diploma in Information Technology </div>
+                    <div class="edu-school">Faran Deucation system</div>
+                    <div class="edu-year">2025 – 2026</div>
+                </div>
+                <div class="edu-item reveal">
+                    <div class="edu-degree">Matriclation</div>
+                    <div class="edu-school">Govt High School</div>
+                    <div class="edu-year">2010 – 2024</div>
+                </div>
+                
+
+                <div style="margin-top:2rem;" class="reveal">
+                    <a href="index.html" class="btn-primary">⬇ Download CV</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with ❤️ by <span>Maaz Ali</span> · Data Analyst & BI Developer · Pakistan 🇵🇰</p>
+    </footer>
+
+    <button class="chat-fab" onclick="toggleChat()">💬</button>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">🤖</div>
+                <div>
+                    <div class="chat-name">Portfolio Assistant</div>
+                    <div class="chat-status">● Online</div>
+                </div>
+            </div>
+            <button class="chat-close" onclick="toggleChat()">✕</button>
+        </div>
+        <div class="chat-msgs" id="chatMsgs">
+            <div class="chat-msg bot">👋 Ask me anything about this portfolio!</div>
+        </div>
+        <div class="chat-input-wrap">
+            <input class="chat-input" id="chatInput" placeholder="Ask me anything…" />
+            <button class="chat-send" onclick="sendChat()">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

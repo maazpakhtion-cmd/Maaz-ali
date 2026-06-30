@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="scroll-progress" id="scrollBar"></div>
+
+    <nav>
+        <div class="nav-logo">{ DA_Portfolio }</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="closeMenu()">Home</a>
+        <a href="about.html" onclick="closeMenu()">About</a>
+        <a href="skills.html" onclick="closeMenu()">Skills</a>
+        <a href="projects.html" onclick="closeMenu()">Projects</a>
+        <a href="certificates.html" onclick="closeMenu()">Certificates</a>
+        <a href="contact.html" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <div class="section-inner" style="padding-top:7rem;">
+        <div class="section-tag">// what I've built</div>
+        <h1 class="section-title">Featured <span>Projects</span></h1>
+        <div class="divider"></div>
+        <p class="section-sub">A selection of dashboards, analyses, and tools I've built using real-world datasets.</p>
+
+        <!-- SEARCH & FILTERS -->
+        <div class="search-wrap">
+            <span class="search-icon">🔍</span>
+            <input class="search-input" id="projectSearch" placeholder="Search projects…" oninput="filterProjects()" />
+        </div>
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="power bi">Power BI</button>
+            <button class="filter-tab" data-filter="excel">Excel</button>
+            <button class="filter-tab" data-filter="python">Python</button>
+            <button class="filter-tab" data-filter="sql">SQL</button>
+        </div>
+
+        <!-- Power BI Project -->
+        <div class="projects-grid" id="projectsGrid">
+
+            <div class="project-card reveal" data-title="April Sale 2024 Dashboard">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(124,106,247,.3),rgba(0,212,170,.3))"><img src="PB 1.png" alt="April Sale 2024 Dashboard"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Power BI</span>
+                        <span class="project-tag">DAX</span>
+                    </div>
+                    <div class="project-title">April Sale 2024 Dashboard</div>
+                    <div class="project-desc">Interactive Power BI dashboard tracking April sales across regions, brands, and time periods with dynamic filtering and KPI cards.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/power-bi-project-1.git" class="project-link gh">⌥ GitHub</a>
+                       
+                    </div>
+                </div>
+            </div>
+<!-- Power BI Project -->
+            <div class="project-card reveal" data-title="Mobile Sale Data Dashboard">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(247,131,106,.3),rgba(124,106,247,.3))"><img src="PB 2.png" alt="Mobile Sale Data Dashboard"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Power BI</span>
+                        <span class="project-tag">Power Query</span>
+                    </div>
+                    <div class="project-title">Mobile Sale Data Dashboard</div>
+                    <div class="project-desc">Comprehensive mobile sale analytics showing sales trends, product performance, and customer behavior across different regions and time periods.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/power-bi-project-2.git" class="project-link gh">⌥ GitHub</a>
+                       
+                    </div>
+                </div>
+            </div>
+<!-- Power BI Project -->
+            <div class="project-card reveal" data-title="Techy Store Sale Data">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(0,212,170,.3),rgba(124,106,247,.3))"><img src="PB 3.png" alt="Techy Store Sale Data"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Power BI</span>
+                        <span class="project-tag">DAX</span>
+                    </div>
+                    <div class="project-title">Techy Store Sale Data</div>
+                    <div class="project-desc">Season performance dashboard for a ski resort showing visitor trends, revenue by activity, and weather impact on bookings.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/power-bi-project-3.git" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+<!-- Power BI Project -->
+            <div class="project-card reveal" data-title="MobilePulse 360 Dashboard">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(247,200,106,.3),rgba(0,212,170,.3))"><img src="PB 4.png" alt="MobilePulse 360 Dashboard"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Power BI</span>
+                        <span class="project-tag">DAX</span>
+                    </div>
+                    <div class="project-title">MobilePulse 360 Dashboard</div>
+                    <div class="project-desc">Historical World Cup data covering goals, match results, top scorers, and country-wise performance from 1930–2022.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/power-bi-project-4.git" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+<!-- Power BI Project -->
+            <div class="project-card reveal" data-title="Sales Data Dashboard">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(0,180,100,.3),rgba(0,212,170,.3))"><img src="PB 5.png" alt="FIFA World Cup Dashboard"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Power BI</span>
+                        <span class="project-tag">DAX</span>
+                    </div>
+                    <div class="project-title"> Sales Data Dashboard</div>
+                    <div class="project-desc">Dynamic Excel dashboard with slicers, pivot charts, and automated VBA macros for monthly sales reporting and trend analysis.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/power-bi-project-5.git" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Power BI Project -->
+            <div class="project-card reveal" data-title="Power BI  Sales Dashboard">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(0,180,100,.3),rgba(0,212,170,.3))"><img src="PB 6.png" alt="FIFA World Cup Dashboard"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                         <span class="project-tag">Power BI</span>
+                        <span class="project-tag">DAX</span>
+                    </div>
+                    <div class="project-title">Golbal Sales </div>
+                    <div class="project-desc">Dynamic Excel dashboard with slicers, pivot charts, and automated VBA macros for monthly sales reporting and trend analysis.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/power-bi-project-6.git" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+<!--Excel Project-->
+            <div class="project-card reveal" data-title="Excel Project">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(52,152,219,.3),rgba(155,89,182,.3))"><img src="EP 1.png" alt="Sale Force Tracker"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Excel</span>
+                        <span class="project-tag">Pivot TAble</span>
+                        <span class="project-tag">Formula </span>
+                    </div>
+                    <div class="project-title">Sale Force Tracker</div>
+                    <div class="project-desc">Exploratory data analysis on a real-world dataset using Pandas and Seaborn — uncovering patterns, outliers, and correlations.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/excel-project-1.git" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+<!--Excel Project-->
+            <div class="project-card reveal" data-title="Coffe Sale DashBoard">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(52,152,219,.3),rgba(155,89,182,.3))"><img src="EP 2.png" alt="Coffe Sale DashBoard"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Excel</span>
+                        <span class="project-tag">Pivot TAble</span>
+                        <span class="project-tag">Formula </span>
+                    </div>
+                    <div class="project-title">Coffe Sale DashBoard</div>
+                    <div class="project-desc">Exploratory data analysis on a real-world dataset using Pandas and Seaborn — uncovering patterns, outliers, and correlations.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/excel-project-2.git" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!--Excel Project-->
+            <div class="project-card reveal" data-title="Coffe Sale DashBoard">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(52,152,219,.3),rgba(155,89,182,.3))"><img src="EP 3.png" alt="Coffe Sale DashBoard"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Excel</span>
+                        <span class="project-tag">Pivot TAble</span>
+                        <span class="project-tag">Formula </span>
+                    </div>
+                    <div class="project-title">Coffe Sale DashBoard</div>
+                    <div class="project-desc">Exploratory data analysis on a real-world dataset using Pandas and Seaborn — uncovering patterns, outliers, and correlations.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/excel-project-3.git" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!--Excel Project-->
+            <div class="project-card reveal" data-title="Target Perfomance Dashboard">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(52,152,219,.3),rgba(155,89,182,.3))"><img src="EP 4.png" alt="Target Perfomance Dashboard"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Excel</span>
+                        <span class="project-tag">Pivot TAble</span>
+                        <span class="project-tag">Formula </span>
+                    </div>
+                    <div class="project-title">Target Perfomance Dashboard</div>
+                    <div class="project-desc">Exploratory data analysis on a real-world dataset using Pandas and Seaborn — uncovering patterns, outliers, and correlations.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/excel-project-4.git" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!--Excel Project-->
+            <div class="project-card reveal" data-title="Hadware Shop Dashboard">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(52,152,219,.3),rgba(155,89,182,.3))"><img src="EP 5.png" alt="Hadware Shop Dashboard"></div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Excel</span>
+                        <span class="project-tag">Pivot TAble</span>
+                        <span class="project-tag">Formula </span>
+                    </div>
+                    <div class="project-title">Hadware Shop Dashboard</div>
+                    <div class="project-desc">Exploratory data analysis on a real-world dataset using Pandas and Seaborn — uncovering patterns, outliers, and correlations.</div>
+                    <div class="project-links">
+                        <a href="https://github.com/maazpakhtion-cmd/excel-project-5.git" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+           <!--Python-->
+            <div class="project-card reveal" data-title="Python Sales Analysis">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(231,76,60,.3),rgba(241,196,15,.3))">🗄️</div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Pandas</span>
+                        <span class="project-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-title">Python Sales Analysis</div>
+                    <div class="project-desc">End-to-end sales analysis pipeline: raw data ingested into MySQL, transformed with complex SQL queries, then visualised in Power BI.</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+<!--Python-->
+            <div class="project-card reveal" data-title="Customer Churn Analysis">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(142,68,173,.3),rgba(52,152,219,.3))">📉</div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">Seaborn</span>
+                    </div>
+                    <div class="project-title">Customer Churn Analysis</div>
+                    <div class="project-desc">Identified key churn drivers in a telecom dataset using feature analysis, visualisation, and segmentation with Python and SQL.</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!--Python-->
+             <div class="project-card reveal" data-title="Customer Churn Analysis">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(142,68,173,.3),rgba(52,152,219,.3))">📉</div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">Seaborn</span>
+                    </div>
+                    <div class="project-title">Customer Churn Analysis</div>
+                    <div class="project-desc">Identified key churn drivers in a telecom dataset using feature analysis, visualisation, and segmentation with Python and SQL.</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!--Python-->
+ <div class="project-card reveal" data-title="Customer Churn Analysis">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(142,68,173,.3),rgba(52,152,219,.3))">📉</div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">Seaborn</span>
+                    </div>
+                    <div class="project-title">Customer Churn Analysis</div>
+                    <div class="project-desc">Identified key churn drivers in a telecom dataset using feature analysis, visualisation, and segmentation with Python and SQL.</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!--Python-->
+             <div class="project-card reveal" data-title="Customer Churn Analysis">
+                <div class="project-thumb" style="background:linear-gradient(135deg,rgba(142,68,173,.3),rgba(52,152,219,.3))">📉</div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">Seaborn</span>
+                    </div>
+                    <div class="project-title">Customer Churn Analysis</div>
+                    <div class="project-desc">Identified key churn drivers in a telecom dataset using feature analysis, visualisation, and segmentation with Python and SQL.</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link gh">⌥ GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with ❤️ by <span>Maaz Ali </span> · Data Analyst & BI Developer · Pakistan 🇵🇰</p>
+    </footer>
+
+    <button class="chat-fab" onclick="toggleChat()">💬</button>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">🤖</div>
+                <div>
+                    <div class="chat-name">Portfolio Assistant</div>
+                    <div class="chat-status">● Online</div>
+                </div>
+            </div>
+            <button class="chat-close" onclick="toggleChat()">✕</button>
+        </div>
+        <div class="chat-msgs" id="chatMsgs">
+            <div class="chat-msg bot">👋 Ask me about any project or tool!</div>
+        </div>
+        <div class="chat-input-wrap">
+            <input class="chat-input" id="chatInput" placeholder="Ask me anything…" />
+            <button class="chat-send" onclick="sendChat()">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="scroll-progress" id="scrollBar"></div>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-logo">{ My  Project And Certificate }</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            <button class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="closeMenu()">Home</a>
+        <a href="about.html" onclick="closeMenu()">About</a>
+        <a href="skills.html" onclick="closeMenu()">Skills</a>
+        <a href="projects.html" onclick="closeMenu()">Projects</a>
+        <a href="certificates.html" onclick="closeMenu()">Certificates</a>
+        <a href="contact.html" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid">
+
+            <!-- LEFT -->
+            <div>
+                <div class="hero-badge">Available for Opportunities</div>
+                <h1 class="hero-title">
+                     I'm <span class="name">Maaz Ali</span><br>Data Analyst
+                </h1>
+                <div class="hero-subtitle">
+                    <span>Power BI</span>
+                    <span>Excel</span>
+                    <span>Python</span>
+                    <span>SQL</span>
+                </div>
+                <p class="hero-desc">
+                    Transforming raw data into actionable insights. I build interactive dashboards, automate reports, and tell compelling stories through data — turning numbers into confident decisions.
+                </p>
+                <div class="hero-actions">
+                    <a href="MAAZ ALI RESUME.pdf" class="btn-primary" download>⬇ Download CV</a>
+                    <a href="contact.html" class="btn-outline">✉ Contact Me</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-num">20+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">8+</div>
+                        <div class="stat-label">Certificates</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">Fresh</div>
+                        <div class="stat-label">Years Exp.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="hero-img-wrap">
+                <div class="hero-img-ring">
+                    <div class="hero-img-inner">
+                        <div class="avatar-emoji">
+                            <img src="Maaz.jpeg" alt="Maaz Ali" /></div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <div style="padding:0 2rem 5rem; max-width:1100px; margin:0 auto;">
+        <div class="section-tag">Explore the portfolio</div>
+        <h2 class="section-title" style="margin-bottom:.5rem;">What's <span>Inside</span></h2>
+        <div class="divider"></div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.2rem;">
+            <a href="about.html" class="stat-card reveal" style="text-decoration:none;display:block;text-align:center;padding:1.5rem;">
+                <div style="font-size:2rem;margin-bottom:.5rem;">👨‍💼</div>
+                <div style="font-weight:600;margin-bottom:.2rem;">About Me</div>
+                <div style="font-size:.82rem;color:var(--text2)">Background & Education</div>
+            </a>
+            <a href="skills.html" class="stat-card reveal" style="text-decoration:none;display:block;text-align:center;padding:1.5rem;">
+                <div style="font-size:2rem;margin-bottom:.5rem;">💻</div>
+                <div style="font-weight:600;margin-bottom:.2rem;">Skills</div>
+                <div style="font-size:.82rem;color:var(--text2)">Tools & Technologies</div>
+            </a>
+            <a href="projects.html" class="stat-card reveal" style="text-decoration:none;display:block;text-align:center;padding:1.5rem;">
+                <div style="font-size:2rem;margin-bottom:.5rem;">📊</div>
+                <div style="font-weight:600;margin-bottom:.2rem;">Projects</div>
+                <div style="font-size:.82rem;color:var(--text2)">Dashboards & Analysis</div>
+            </a>
+            <a href="certificates.html" class="stat-card reveal" style="text-decoration:none;display:block;text-align:center;padding:1.5rem;">
+                <div style="font-size:2rem;margin-bottom:.5rem;">🏅</div>
+                <div style="font-weight:600;margin-bottom:.2rem;">Certificates</div>
+                <div style="font-size:.82rem;color:var(--text2)">Credentials & Resume</div>
+            </a>
+            <a href="contact.html" class="stat-card reveal" style="text-decoration:none;display:block;text-align:center;padding:1.5rem;">
+                <div style="font-size:2rem;margin-bottom:.5rem;">📞</div>
+                <div style="font-weight:600;margin-bottom:.2rem;">Contact</div>
+                <div style="font-size:.82rem;color:var(--text2)">Let's Collaborate</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Built with ❤️ by <span>Maaz Ali</span> · Data Analyst & BI Developer · Pakistan 🇵🇰</p>
+        <p style="margin-top:.4rem;font-size:.76rem;">© 2026 All rights reserved</p>
+    </footer>
+
+    <!-- CHAT -->
+    <button class="chat-fab" onclick="toggleChat()">💬</button>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">🤖</div>
+                <div>
+                    <div class="chat-name">Portfolio Assistant</div>
+                    <div class="chat-status">● Online</div>
+                </div>
+            </div>
+            <button class="chat-close" onclick="toggleChat()">✕</button>
+        </div>
+        <div class="chat-msgs" id="chatMsgs">
+            <div class="chat-msg bot">👋 Hi I am Maaz Ali ! Ask me about skills, projects, certificates, or how to get in touch!</div>
+        </div>
+        <div class="chat-input-wrap">
+            <input class="chat-input" id="chatInput" placeholder="Ask me anything…" />
+            <button class="chat-send" onclick="sendChat()">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

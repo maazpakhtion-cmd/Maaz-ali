@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollBar"></div>
+
+<nav>
+  <div class="nav-logo">{ DA_Portfolio }</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="certificates.html">Certificates</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"        onclick="closeMenu()">Home</a>
+  <a href="about.html"        onclick="closeMenu()">About</a>
+  <a href="skills.html"       onclick="closeMenu()">Skills</a>
+  <a href="projects.html"     onclick="closeMenu()">Projects</a>
+  <a href="certificates.html" onclick="closeMenu()">Certificates</a>
+  <a href="contact.html"      onclick="closeMenu()">Contact</a>
+</div>
+
+<div class="section-inner skills-section" style="padding-top:7rem;">
+  <div class="section-tag"> what I use</div>
+  <h1 class="section-title">My <span>Skills</span></h1>
+  <div class="divider"></div>
+  <p class="section-sub">Technologies and tools I use to collect, clean, analyse, and visualise data.</p>
+
+  <!-- CORE SKILLS -->
+  <div class="skills-grid">
+
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">📊</span>Microsoft Excel</div>
+        <div class="skill-pct">95%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="95"></div></div>
+      <div class="skill-stars">⭐⭐⭐⭐⭐ Advanced</div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">📈</span>Power BI</div>
+        <div class="skill-pct">92%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="92"></div></div>
+      <div class="skill-stars">⭐⭐⭐⭐⭐ Expert</div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">🐍</span>Python</div>
+        <div class="skill-pct">78%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="78"></div></div>
+      <div class="skill-stars">⭐⭐⭐⭐☆ Advanced</div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">🗄️</span>SQL</div>
+        <div class="skill-pct">80%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+      <div class="skill-stars">⭐⭐⭐⭐☆ Advanced</div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">📉</span>Data Visualisation</div>
+        <div class="skill-pct">90%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+      <div class="skill-stars">⭐⭐⭐⭐⭐ Expert</div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">🧹</span>Data Cleaning / ETL</div>
+        <div class="skill-pct">88%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+      <div class="skill-stars">⭐⭐⭐⭐⭐ Expert</div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">📐</span>DAX / Power Query</div>
+        <div class="skill-pct">85%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+      <div class="skill-stars">⭐⭐⭐⭐⭐ Expert</div>
+    </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">📊</span>Auto CAD 2D & 3D</div>
+        <div class="skill-pct">90%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="70"></div></div>
+      <div class="skill-stars">⭐⭐⭐☆☆ Intermediate</div>
+    </div>
+<div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">📊</span>Graphic Design</div>
+        <div class="skill-pct">70%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="70"></div></div>
+      <div class="skill-stars">⭐⭐⭐☆☆ Intermediate</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">📊</span>C++ Language</div>
+        <div class="skill-pct">60%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="70"></div></div>
+      <div class="skill-stars">⭐⭐⭐☆☆ Intermediate</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-header">
+        <div class="skill-name"><span class="skill-icon">🧹</span>Video Editing </div>
+        <div class="skill-pct">90%</div>
+      </div>
+      <div class="skill-bar"><div class="skill-fill" data-pct="70"></div></div>
+      <div class="skill-stars">⭐⭐⭐☆☆ Intermediate</div>
+    </div>
+  </div>
+
+  <!-- TAGS -->
+  <div class="tags-section reveal">
+    <div class="tags-title">Python Libraries & Other Tools</div>
+    <div class="tags">
+      <span class="tag">Pandas</span>
+      <span class="tag">NumPy</span>
+      <span class="tag">Matplotlib</span>
+      <span class="tag">Seaborn</span>
+      <span class="tag">Scikit-learn</span>
+      <span class="tag">Jupyter Notebook</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">Google Sheets</span>
+      <span class="tag">Pivot Tables</span>
+      <span class="tag">VBA / Macros</span>
+      <span class="tag">GitHub</span>
+      <span class="tag">VS Code</span>
+      <span class="tag">Statistics</span>
+      <span class="tag">EDA</span>
+      <span class="tag">KPI Design</span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Built with ❤️ by <span>Your Name</span> · Data Analyst & BI Developer · Pakistan 🇵🇰</p>
+</footer>
+
+<button class="chat-fab" onclick="toggleChat()">💬</button>
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">
+    <div class="chat-header-info">
+      <div class="chat-avatar">🤖</div>
+      <div><div class="chat-name">Portfolio Assistant</div><div class="chat-status">● Online</div></div>
+    </div>
+    <button class="chat-close" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="chat-msgs" id="chatMsgs">
+    <div class="chat-msg bot">👋 Ask me about any skill or tool!</div>
+  </div>
+  <div class="chat-input-wrap">
+    <input class="chat-input" id="chatInput" placeholder="Ask me anything…"/>
+    <button class="chat-send" onclick="sendChat()">➤</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

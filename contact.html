@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="scroll-progress" id="scrollBar"></div>
+
+    <nav>
+        <div class="nav-logo">{ DA_Portfolio }</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="closeMenu()">Home</a>
+        <a href="about.html" onclick="closeMenu()">About</a>
+        <a href="skills.html" onclick="closeMenu()">Skills</a>
+        <a href="projects.html" onclick="closeMenu()">Projects</a>
+        <a href="certificates.html" onclick="closeMenu()">Certificates</a>
+        <a href="contact.html" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <div class="section-inner" style="padding-top:7rem;">
+        <div class="section-tag">// get in touch</div>
+        <h1 class="section-title">Contact <span>Me</span></h1>
+        <div class="divider"></div>
+        <p class="section-sub">Have a project in mind or want to collaborate? I'm always open to new opportunities and conversations.</p>
+
+        <div class="contact-grid">
+
+            <!-- LEFT: CONTACT INFO -->
+            <div class="contact-info">
+
+                <a href="maazpakhtion@gmail.com" class="contact-item reveal">
+                    <div class="contact-icon">✉</div>
+                    <div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-val">maazpakhtion@gmail.com</div>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/maaz-ali-b5aa18384" class="contact-item reveal" target="_blank">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-val">maaz-ali-b5aa18384</div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/maazpakhtion-cmd" class="contact-item reveal" target="_blank">
+                    <div class="contact-icon">⌥</div>
+                    <div>
+                        <div class="contact-label">GitHub</div>
+                        <div class="contact-val">maazpakhtion-cmd</div>
+                    </div>
+                </a>
+
+                <div class="contact-item reveal" style="cursor:default;">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <div class="contact-label">Location</div>
+                        <div class="contact-val">Pakistan 🇵🇰</div>
+                    </div>
+                </div>
+
+                <div class="contact-item reveal" style="cursor:default;">
+                    <div class="contact-icon">⏰</div>
+                    <div>
+                        <div class="contact-label">Response Time</div>
+                        <div class="contact-val">Within 24 hours</div>
+                    </div>
+                </div>
+
+                <!-- STATUS BADGE -->
+                <div class="reveal" style="background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.25);border-radius:12px;padding:1rem 1.2rem;display:flex;align-items:center;gap:1rem;">
+                    <div style="font-size:1.4rem;">✅</div>
+                    <div>
+                        <div style="font-size:.72rem;color:var(--text2);">Current Status</div>
+                        <div style="font-weight:600;color:var(--accent2);">Open to Work — Freelance & Full-time</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: FORM -->
+            <div class="contact-form reveal">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">Your Name</label>
+                        <input id="fname" type="text" placeholder="Maaz Ali" />
+                    </div>
+                    <div class="form-group">
+                        <label for="femail">Email Address</label>
+                        <input id="femail" type="email" placeholder="ABC@example.com" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fsubject">Subject</label>
+                    <input id="fsubject" type="text" placeholder="Project Collaboration / Job Opportunity" />
+                </div>
+                <div class="form-group">
+                    <label for="fmsg">Message</label>
+                    <textarea id="fmsg" rows="6" placeholder="Tell me about your project, timeline, and how I can help…"></textarea>
+                </div>
+                <button class="btn-primary" onclick="handleContactSubmit()" style="align-self:flex-start;">
+        ✉ Send Message
+      </button>
+                <div id="formMsg" style="display:none;color:var(--accent2);font-size:.88rem;margin-top:.5rem;padding:.7rem 1rem;background:rgba(0,212,170,.08);border-radius:8px;border:1px solid rgba(0,212,170,.2);">
+                    ✅ Message sent! I'll get back to you within 24 hours.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with ❤️ by <span>Maaz Ali</span> · Data Analyst & BI Developer · Pakistan 🇵🇰</p>
+    </footer>
+
+    <button class="chat-fab" onclick="toggleChat()">💬</button>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">🤖</div>
+                <div>
+                    <div class="chat-name">Portfolio Assistant</div>
+                    <div class="chat-status">● Online</div>
+                </div>
+            </div>
+            <button class="chat-close" onclick="toggleChat()">✕</button>
+        </div>
+        <div class="chat-msgs" id="chatMsgs">
+            <div class="chat-msg bot">👋 Feel free to reach out — I'd love to connect!</div>
+        </div>
+        <div class="chat-input-wrap">
+            <input class="chat-input" id="chatInput" placeholder="Ask me anything…" />
+            <button class="chat-send" onclick="sendChat()">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
